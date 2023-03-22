@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Enter your name</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="centerV centerH fullSize" id="lengthScreen">
+      <div>
+        <p class="centerText">How many letters are in your name?</p>
+        <div class="centerV centerH">
+          <svg class="btn" onclick="nameLength--;update()" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M759.2 419.8L697.4 358 512 543.4 326.6 358l-61.8 61.8L512 667z"/></svg>
+          <span id="nameLen" class="centerText">5</span>
+          <svg class="btn" onclick="nameLength++;update()" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M264.8 604.7l61.8 61.8L512 481.1l185.4 185.4 61.8-61.8L512 357.5z"/></svg>
+        </div>
+        <br>
+        <div class="centerH submit" onclick="showNameScreen()">
+          Submit
+        </div>
+      </div>
+    </div>
+    <div class="fullSize hidden centerV centerH" id="nameScreen">
+      <div class="fullWidth">
+        <p class="centerText">Please enter your name. Click a letter to lock it.</p>
+        <div id="cardCont" class="spaceOut">
+
+        </div>
+        <div class="centerH submit" onclick="submitCards()" id="submitName">
+          Shuffle
+        </div>
+      </div>
+    </div>
+    <div class="fullSize hidden centerH centerV" id="welcomeScreen">
+      <span class="centerText">
+        <p id="welcome"></p>
+        <p id="date"></p>
+        <p>
+          Have a nice day.<br>
+          :)
+        </p>
+      </span>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

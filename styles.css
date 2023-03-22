@@ -1,0 +1,109 @@
+:root {
+  --pri: #191C59;
+  --sec: #7F81B1;
+  background-color: var(--pri);
+  color: var(--sec);
+  font-family: FredokaOne;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0
+}
+p {
+  font-size: 35px;
+  user-select: none;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--sec);
+  fill: var(--pri);
+  background-color: var(--sec);
+  border-radius: 100%;
+  transition: 0.25s fill, 0.25s background-color, 0.1s scale;
+}
+.btn:hover {
+  fill: var(--sec);
+  background-color: var(--pri);
+}
+.btn:active {
+  scale: 0.9
+}
+
+.submit {
+  border: 7.5px solid var(--sec);
+  padding: 5px;
+  font-size: 35px;
+  border-radius: 25px;
+  transition: 0.25s background-color, 0.25s color, 0.1s scale;
+  background-color: var(--sec);
+  color: var(--pri);
+  user-select: none;
+}
+.submit:hover {
+  background-color: var(--pri);
+  color: var(--sec)
+}
+.submit:active {
+  scale: 0.9
+}
+
+#cardCont {
+  margin-bottom: 25px;
+}
+
+.card {
+  border: 5px solid var(--sec);
+  border-radius: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 100%;
+  user-select: none;
+  font-size: 30px;
+}
+.locked {
+  background-color: var(--sec);
+  color: var(--pri);
+}
+
+#nameLen {
+  font-size: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  user-select: none;
+  align-items: center;
+  width: 50px;
+}
+
+.centerH {
+  display: flex;
+  justify-content: center;
+}
+.centerV {
+  display: flex;
+  align-items: center;
+}
+.fullSize {
+  width: 100%;
+  height: 100%;
+}
+.fullWidth {
+  width: 100%
+}
+.centerText {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.spaceOut {
+  display: flex;
+  justify-content: space-between;
+}
+
+@font-face {
+  font-family: 'FredokaOne';
+  src:  url('FredokaOne-Regular.ttf') format('truetype')
+}
